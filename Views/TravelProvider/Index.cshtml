@@ -1,0 +1,16 @@
+﻿
+<div class="bg-light">
+    <h3 class="mt-2 mx-auto">Dear Provider Welcome to the Page: <span class="text-danger font-weight-bold">|Travel Provider:- </span><span class="text-warning font-weight-bold">| @User.Identity.Name |</span></h3>
+    @if (User.Identity.IsAuthenticated && User.IsInRole("TravelProvider"))
+    {
+        <a class="btn btn-dark text-white mt-3 ml-2 " asp-action="Add" asp-controller="Package">Add Packages</a><br />
+        <a class="btn btn-dark text-white mt-2 ml-2" asp-action="Index" asp-controller="Package">Display My Packages</a>
+        
+
+    }
+</div>
+<div>
+   
+</div>
+
+

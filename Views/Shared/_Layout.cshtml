@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+   <link href="~/lib/popper.js/docs/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Page-->
+    <div class="container-fluid bg-white">
+
+
+        <!--Header-->
+        <div class="row bg-secondary">
+            @{
+            Html.RenderPartial("_Header");
+            }
+
+        </div>
+        @*<div class="row">
+            <nav class="bg-info">
+                <a>Home</a>
+            </nav>
+        </div>*@
+
+        <!--/.Body-->
+
+       
+            <div class="row">
+                @RenderBody()
+            </div>
+            <!--Header-->
+            @*<div class="row ">
+                @{
+            Html.RenderPartial("_Body");
+                }
+
+            </div>*@
+
+            <!--/.body-->
+
+
+
+       
+
+        <!--Footer-->
+        <footer class="page-footer font-small text-dark pt-4 bg-white">
+            @{
+            Html.RenderPartial("_Footer");
+            }
+        </footer>
+        <!--/.Footer-->
+
+
+
+
+    </div><!--/.Page-->
+
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/popper.js/dist/umd/popper.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

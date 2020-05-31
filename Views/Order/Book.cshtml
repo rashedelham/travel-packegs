@@ -1,0 +1,70 @@
+﻿@model OrderBookViewModel
+<div class="container-fluid">
+<form asp-action="book" asp-controller="Order" method="post">
+    <section class="text-center my-5">
+        <div class="row">
+
+
+            <!-- Grid column -->
+            <div class="col-md-4 mb-2 mt-2">
+
+
+                <!-- Card -->
+                <div class="card card-columns">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img src="~/@Model.PackImage" class="card-img-top" alt="sample photo">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card image -->
+                    <!-- Card content -->
+                    <div class="card-body text-center">
+                        <!-- Category & Title -->
+                        <a href="" class="grey-text">
+                            <h5>Name: @Model.PackName</h5>
+                        </a>
+                        <h4 class="card-title">
+                            <strong>
+                                <a href="">Location: @Model.PackLocation</a>
+                            </strong>
+                        </h4>
+
+                        <!--Description-->
+                        <p class="card-text">
+                            Discription: @Model.PackDescription
+                        </p>
+                        <!-- Card footer -->
+                        <div class="px-1">
+                            <span class="float-left font-weight-bold">
+                                <strong>Price: @Model.PackPrice</strong>
+                                <input asp-for="PackPrice" type="hidden"/>
+                                <input asp-for="PackagId" type="hidden"/>
+                            </span>
+
+                        </div>
+                        <div class="px-1">
+                            @*<span class="font-weight-bold">
+                                    <strong>@Model.PackageStatus</strong>
+                                </span>*@
+
+                            <span class="">
+                                @*<a class="btn btn-success btn-rounded font-weight-bold" asp-action="book" asp-controller="Order" method="post">Confirm Booking</a>*@
+                                <input type="submit" value="Confirm booking" />
+                            </span>
+
+                        </div>
+                    </div>
+                    <!-- Card content -->
+                </div>
+                <!-- Card -->
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+    </section>
+</form>
+</div>

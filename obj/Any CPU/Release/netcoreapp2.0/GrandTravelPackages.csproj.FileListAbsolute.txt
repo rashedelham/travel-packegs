@@ -1,0 +1,10 @@
+D:\GrandTravelPackages\GrandTravelPackages\bin\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.deps.json
+D:\GrandTravelPackages\GrandTravelPackages\bin\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.runtimeconfig.json
+D:\GrandTravelPackages\GrandTravelPackages\bin\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.runtimeconfig.dev.json
+D:\GrandTravelPackages\GrandTravelPackages\bin\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.dll
+D:\GrandTravelPackages\GrandTravelPackages\bin\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.pdb
+D:\GrandTravelPackages\GrandTravelPackages\obj\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.csproj.CoreCompileInputs.cache
+D:\GrandTravelPackages\GrandTravelPackages\obj\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.AssemblyInfoInputs.cache
+D:\GrandTravelPackages\GrandTravelPackages\obj\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.AssemblyInfo.cs
+D:\GrandTravelPackages\GrandTravelPackages\obj\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.dll
+D:\GrandTravelPackages\GrandTravelPackages\obj\Any CPU\Release\netcoreapp2.0\GrandTravelPackages.pdb

@@ -1,0 +1,70 @@
+﻿@*@foreach (var item in Model.packages)
+{
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-4 col-md-6 mb-lg-0 mb-4">
+            <!-- Card -->
+            <div class="card card-cascade narrower card-ecommerce">
+                <!-- Card image -->
+                <div class="view overlay">
+                    <img src="~/@item.PackImage" class="card-img-top" alt="sample photo">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!-- Card image -->
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Category & Title -->
+                    <a href="" class="grey-text">
+                        <h5>Name: @item.PackName</h5>
+                    </a>
+                    <h4 class="card-title">
+                        <strong>
+                            <a href="">Location: @item.PackLocation</a>
+                        </strong>
+                    </h4>
+                    <!--Rating-->
+                    @*<ul class="rating">
+                            <li>
+                                <i class="fa fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>*@
+                    <!-- Description -->
+                    @*<p class="card-text">
+                        Discription: @item.PackDescription
+                    </p>
+                    <!-- Card footer -->
+                    <div class="card-footer px-1">
+                        <span class="float-left font-weight-bold">
+                            <strong>Price: @item.PackPrice</strong>
+                        </span>
+                        <span class="float-right font-weight-bold">
+                            <a class="btn btn-success btn-rounded btn-md">Book Now</a>
+                        </span>
+                    </div>
+                </div>
+                <!-- Card content -->
+            </div>
+            <!-- Card -->
+        </div>
+        <!-- Grid row -->
+    </div>*@
+
+}*@
+

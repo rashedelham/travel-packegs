@@ -1,0 +1,55 @@
+﻿
+@model CustomerOrderViewModel
+
+<div class="pr-4 mt-3 mr-md-5 float-right card-group container-fluid">
+    <h3 class="">Dear Customer Welcome to the Page: <span class="text-danger font-weight-bold">Bookings from </span><span class="text-warning font-weight-bold">| @User.Identity.Name |</span></h3>
+    @*<img class="d-flex mr-3 img-thumbnail img-fluid badge-primary px-4 table-responsive-sm" width="200" height="200" src="~/images/@Model.ProfilePhoto">*@
+</div>
+<div>
+    <a class="btn btn-primary" asp-action="Index" asp-controller="Customer">Back</a>
+</div>
+
+
+
+<section class="text-center my-5">
+    <div class="row">
+        @foreach (var item in Model.GetOrders)
+        {
+
+            <!-- Grid column -->
+        <div class="col-md-4 mb-2 mt-2">
+
+            <div class="view overlay">
+                
+                <!-- Card -->
+                <div class="card card-columns">
+                    <!-- Card image -->
+
+                    <span class="float-left font-weight-bold">
+                        <strong>Package Num: @item.PackagId</strong>
+                    </span>
+                    <span class="float-left font-weight-bold">
+                        <strong>Order Num: @item.OrderId</strong>
+                    </span>
+                    <span class="float-left font-weight-bold">
+                        <strong>BookingStatus: @item.Status</strong>
+                    </span>
+                    <span class="float-left font-weight-bold">
+                        <strong>BookingDate: @item.Date</strong>
+                    </span>
+                    <span class="float-left font-weight-bold text-danger">
+                        <strong>Price: @item.Price</strong>
+                    </span>
+
+                </div>                
+                <!-- Card content -->
+            </div>
+            <!-- Card -->
+
+
+        </div>
+            <!-- Grid row -->
+        }
+    </div>
+</section>
+
